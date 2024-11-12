@@ -1,7 +1,7 @@
 
 resource "azurerm_resource_group" "example" {
   name     = "example-resources"
-  location = "Central US" # East US
+  location = "North Europe"
 }
 
 resource "azurerm_public_ip" "example" {
@@ -112,7 +112,7 @@ resource "azurerm_storage_account" "mystorageaccount" {
 resource "random_string" "winpassword" {
   length  = 12
   upper   = true
-  number  = true
+  numeric  = true
   lower   = true
   special = true
   override_special = "!@#$%&"
